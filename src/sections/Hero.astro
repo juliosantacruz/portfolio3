@@ -1,0 +1,49 @@
+---
+import background from "../assets/HeroBackground.jpg";
+---
+
+<section id="Hero" style={`background-image:url(${background})`}>
+    <div class="title">
+        <h1>Julio Santacruz <span class="text-gradient">WebDev</span></h1>
+        <p>HTML • CSS • Javascript • React • Django • Postgresql</p>
+    </div>
+</section>
+
+<style>
+    section {
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .title {
+        position: relative;
+        top: 30%;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(150, 150, 150, 0.6);
+        border-radius: 30px;
+    }
+    h1 {
+        font-size: 40px;
+        margin: 20px 0 10px 0;
+        color: aliceblue;
+    }
+    p {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

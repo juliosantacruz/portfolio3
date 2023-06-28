@@ -1,0 +1,45 @@
+---
+import imageRocket from "../assets/Startup_Monochromatic.png";
+---
+
+<section id="AboutMe">
+    <div class="AboutMe">
+        <div class="aboutMeImage">
+            <img src={imageRocket} alt="" />
+        </div>
+        <div class="content">
+            <h2>Hello, My name is Julio Santacruz, I'm a web developer</h2>
+            <p>Let me help you with your project</p>
+            <button>Download Resume</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .AboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+    .aboutMeImage{
+        width: 45%;
+    }
+    img{
+        width: 100%;
+    }
+    .content{ width: 50%;
+    }
+    h2{
+        font-size: 30px;
+    }
+</style>
