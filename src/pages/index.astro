@@ -4,6 +4,8 @@ import Hero from '../sections/Hero.astro'
 import Navbar from '../layouts/Navbar.astro';
 import AboutMe from '../sections/AboutMe.astro'
 import Skills from '../sections/Skills.astro';
+import Projects from '../sections/Projects.astro';
+import Contact from '../sections/Contact.astro';
 
 ---
 
@@ -13,17 +15,16 @@ import Skills from '../sections/Skills.astro';
 		<Navbar/>
 		<AboutMe/>
 		<Skills/>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
-		</p>
+		<Projects/>
+		<Contact>
 	</main>
 </Layout>
 
 <style>
+	html {
+  scroll-behavior: smooth;
+}
+
 	body {
 		margin: 0 auto !important;
 		padding: 0;

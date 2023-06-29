@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.7.1"
+    "@astrojs/react": "^2.2.1",
+    "astro": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.63.6",
+    "swiper": "^9.4.1"
   }
 }

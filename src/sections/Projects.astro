@@ -1,0 +1,69 @@
+---
+import Sliders from "../components/Sliders";
+import quimikal from "../assets/imgProjects/p_quimikal.jpg";
+import bimcapacitacion from "../assets/imgProjects/p_bimcapacitacion.jpg";
+import discountsCitys from "../assets/imgProjects/p_discountscitys.jpg";
+import caretCorp from "../assets/imgProjects/p_sample_form.jpg";
+
+const latestProjects = [
+    {
+        title: "Quimikal Academy",
+        image: quimikal,
+        stack: ["html", "css"],
+        lang: "Ingles/English",
+    },
+    {
+        title: "BIMCapacitacion",
+        image: bimcapacitacion,
+        stack: ["html", "css"],
+        lang: "Ingles/English",
+    },
+    {
+        title: "Discounts Citys Sub",
+        image: discountsCitys,
+        stack: ["html", "css"],
+        lang: "Ingles/English",
+    },
+    {
+        title: "Caret Contact Form",
+        image: caretCorp,
+        stack: ["html", "css"],
+        lang: "Ingles/English",
+    },
+];
+---
+
+<section id="Projects">
+    <div class="ProjectWrapper">
+        <div class="ProjectSlider">
+            <h3>Latest projects / Demos...</h3>
+            <Sliders type="profesional" client:visible />
+        </div>
+        <div class="ProjectSlider">
+            <h3>React projects...</h3>
+            <Sliders type="react" client:visible />
+        </div>
+
+        <!-- <div class="ProjectSlider">
+            <h3>DevTo Posts...</h3>
+            <Sliders/>
+        </div> -->
+    </div>
+
+    
+    
+</section>
+
+<style>
+    section {
+        height: 100vh;
+        width: 100vw;
+    }
+    .ProjectWrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+    h3 {
+        font-size: 40px;
+    }
+</style>

@@ -2,6 +2,7 @@
 export interface Props {
     title: string;
     image: string;
+    
 }
 const { title, image } = Astro.props;
 const nameTitle = title
@@ -23,7 +24,7 @@ const nameTitle = title
 
     card?.addEventListener("mouseenter", function () {
         // Acciones a realizar cuando el cursor entra en el elemento (evento onHover)
-        console.log("El cursor ha entrado en el elemento.");
+        // console.log("El cursor ha entrado en el elemento.");
         if (card){
             card.style.border = "3px dashed white"
         }
@@ -40,7 +41,7 @@ const nameTitle = title
 
     card?.addEventListener("mouseleave", function () {
         // Acciones a realizar cuando el cursor entra en el elemento (evento onHover)
-        console.log("El cursor ha salido en el elemento.");
+        // console.log("El cursor ha salido en el elemento.");
         if (card){
             card.style.border = "3px dashed rgba(245, 222, 179, 0)"
         }
@@ -55,7 +56,7 @@ const nameTitle = title
         }
          
     });
-    console.log(card);
+    // console.log(card);
 </script>
 
 <style>

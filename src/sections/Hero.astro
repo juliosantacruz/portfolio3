@@ -1,11 +1,15 @@
 ---
 import background from "../assets/HeroBackground.jpg";
+// import CardQuotes from "../components/CardQuotes.astro";
 ---
 
 <section id="Hero" style={`background-image:url(${background})`}>
     <div class="title">
         <h1>Julio Santacruz <span class="text-gradient">WebDev</span></h1>
         <p>HTML • CSS • Javascript • React • Django • Postgresql</p>
+    </div>
+    <div class="quotes">
+        <!-- <CardQuotes/> -->
     </div>
 </section>
 
@@ -20,7 +24,7 @@ import background from "../assets/HeroBackground.jpg";
     .title {
         position: relative;
         top: 30%;
-        width: 60%;
+        width: 40%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -45,5 +49,17 @@ import background from "../assets/HeroBackground.jpg";
         -webkit-text-fill-color: transparent;
         background-size: 400%;
         background-position: 0%;
+    }
+
+    @media screen and (max-width: 1280px) {
+
+    }
+
+    @media screen and (max-width: 800px) {
+
+    }
+
+    @media screen and (max-width: 480px) {
+        
     }
 </style>
