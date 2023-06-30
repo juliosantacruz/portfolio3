@@ -1,18 +1,103 @@
 ---
-
+import githubIcon from "../assets/Logos_SocialMedia_png/github-logo-240.png";
+import linkedincon from "../assets/Logos_SocialMedia_png/linkedin-logo-240.png";
+import emailIcon from "../assets/Logos_SocialMedia_png/envelope-regular-240.png";
+import instagramIcon from "../assets/Logos_SocialMedia_png/instagram-logo-240.png";
+import whattsappIcon from "../assets/Logos_SocialMedia_png/whatsapp-logo-240.png";
 ---
 
-<section>
-    Soy el contact
-</section>
+<section id="Contact">
+    <h3>Contact me... how?</h3>
+    <button class="project-card-btn">Send me a Message 💬</button>
+    <div class="socialMediaGroup">
+        <a href="https://github.com/juliosantacruz" target="_blank">
+            <div class="socialMedia">
+                <img src={githubIcon} alt="" />
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/julio-santacruz/" target="_blank">
+            <div class="socialMedia">
+                <img src={linkedincon} alt="" />
+            </div>
+        </a>
+        <a href="mailto:julio.santacruzh@gmail.com" target="_blank">
+            <div class="socialMedia">
+                <img src={emailIcon} alt="" />
+            </div>
+        </a>
+       
+        <a  href="https://www.wa.link/mqz551" target="_blank">
+            <div class="socialMedia">
+                <img src={whattsappIcon} alt="" />
+            </div>
+        </a>
 
-<style>
-     section {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
+        <style>
+            section {
+                height: 100vh;
+                width: 100vw;
+                background-image: url("../assets/bg_contact.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h3 {
+                font-size: 30px;
+            }
+            .project-card-btn {
+                background: #4e66f8;
+                color: #fff;
+                border: none;
+                font-size: 1.5rem;
+                padding: 0.5rem 1rem;
+                border-radius: 0.3rem;
+                cursor: pointer;
+                box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            .project-card-btn:hover,
+            .project-card-btn:focus {
+                background: #505ebb;
+            }
+            .socialMediaGroup {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .socialMedia {
+                width: 30px;
+                height: 30px;
+                padding: 10px;
+                margin: 0 10px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+            img {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 1280px) {
+                .title {
+                    width: 60%;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+            }
+
+            @media screen and (max-width: 480px) {
+                .socialMedia {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        </style>
+    </div>
+</section>

@@ -17,18 +17,39 @@ type CardData = {
   language: string;
 };
 
-export default function Sliders({type }: any) {
+export default function Sliders({ type }: any) {
   return (
     <div>
       <Swiper
-        spaceBetween={30}
-        slidesPerView={2.3}
-        
+        slidesPerView={1.1}
+        spaceBetween={10}
+        slidesPerGroup={1}
+        breakpoints={{
+          // when window width is >= 425px
+          425: {
+            slidesPerView: 1.2,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 1.8,
+          },
+          // when window width is >= 1024px
+          1024: {
+            spaceBetween: 10,
+            slidesPerView: 2.5,
+          },
+          1280: {
+            slidesPerGroup: 2,
+            slidesPerView: 3.2,
+          },
+        }}
+         
+        navigation
       >
         {projects.map((element: any) => {
           if (element.type === type) {
             return (
-              <SwiperSlide key={element.id} >
+              <SwiperSlide key={element.id}>
                 <CardProjects data={element} />
               </SwiperSlide>
             );

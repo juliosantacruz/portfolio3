@@ -7,10 +7,11 @@ import imageRocket from "../assets/Startup_Monochromatic.png";
         <div class="aboutMeImage">
             <img src={imageRocket} alt="" />
         </div>
+
         <div class="content">
             <h2>Hello, My name is Julio Santacruz, I'm a web developer</h2>
             <p>Let me help you with your project</p>
-            <button>Download Resume</button>
+            <a href="" class="resume-btn">Download Resume</a>
         </div>
     </div>
 </section>
@@ -31,15 +32,79 @@ import imageRocket from "../assets/Startup_Monochromatic.png";
         align-items: center;
         width: 60%;
     }
-    .aboutMeImage{
+    .aboutMeImage {
         width: 45%;
     }
-    img{
+
+    img {
         width: 100%;
     }
-    .content{ width: 50%;
+    .content {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    h2{
+    h2 {
         font-size: 30px;
+    }
+    .resume-btn {
+        background: #4e66f8;
+        color: #fff;
+        border: none;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .resume-btn:hover,
+    .resume-btn:focus {
+        background: #505ebb;
+    }
+    @media screen and (max-width: 1024px) {
+        h2 {
+            margin: 15px 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 30px;
+        }
+        .AboutMe {
+            flex-direction: column-reverse;
+        }
+        .content {
+            width: 80%;
+            height: 40%;
+        }
+        .aboutMeImage {
+            width: 60%;
+            height: 40%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+      
+        h2 {
+            font-size: 24px;
+        }
+        
+        .content {
+            width: 100%;
+            height: 40%;
+        }
+        .aboutMeImage {
+            width: 100%;
+
+            height: 40%;
+        }
+    }
+    @media screen and (max-width: 320px) {
     }
 </style>

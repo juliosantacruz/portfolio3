@@ -1,15 +1,16 @@
 ---
-import logo from '../assets/logo_450x200_azul_trans.png'
+import logo from "../assets/logo_450x200_azul_trans.png";
 ---
 
 <header>
     <nav>
-        <a href="#Hero" > <img src={logo} alt="logo" class="logo"></a>
-        <a href="#AboutMe"> About Me</a>
-        <a href="#Skills" class="active"> Skills</a>
-        <a href="#Projects"> Projects</a>
-        <a href="#Contact"> Contact</a>
-        <a href="#Contact"> Say Hi!</a>
+        <a href="#Hero" class="logoNavbar">
+            <img src={logo} alt="logo" class="logo" /></a
+        >
+        <a href="#AboutMe" class="linkNavbar"> About Me</a>
+        <a href="#Skills" class="active linkNavbar"> Skills</a>
+        <a href="#Projects" class="linkNavbar"> Projects</a>
+        <a href="#Contact" class="linkNavbar"> Contact</a>
     </nav>
 </header>
 
@@ -19,7 +20,7 @@ import logo from '../assets/logo_450x200_azul_trans.png'
         margin: 30px auto;
 
         position: sticky;
-        top: 0;
+        top: 10px;
         z-index: 10;
     }
     nav {
@@ -35,21 +36,37 @@ import logo from '../assets/logo_450x200_azul_trans.png'
         background: #fff;
         box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.2);
     }
-    .logo{
+    .linkNavbar {
+        width: 18%;
+    }
+    .logo {
         width: auto;
         height: 40px;
     }
     a {
-        width: 120px;
+        /* width: 120px; */
         height: 40px;
         background-color: rgb(255, 255, 255);
         line-height: 40px;
-        
+
         /* box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.1); */
         text-align: center;
         text-decoration: none;
     }
-    .active{
+    .active {
         border-bottom: 3px solid black;
+    }
+    @media screen and (max-width: 1024px) {
+    }
+
+    @media screen and (max-width: 768px) {
+        header{
+            width: 90vw;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+    }
+    @media screen and (max-width: 320px) {
     }
 </style>

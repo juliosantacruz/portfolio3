@@ -64,3 +64,33 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+         
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+}
+@media screen and (max-width: 320px) {
+    .CardProjects {
+        width: 240px;
+        height: 200px;
+    
+        border-radius: 10px;
+ 
+        .CardContent {
+            
+            h3 {
+                
+                font-size: 18px;
+            }
+            
+        }
+  
+    }
+}
