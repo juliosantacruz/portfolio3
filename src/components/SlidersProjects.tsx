@@ -27,11 +27,11 @@ export default function Sliders({ type }: any) {
         breakpoints={{
           // when window width is >= 425px
           425: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.3,
           },
           // when window width is >= 768px
           768: {
-            slidesPerView: 1.8,
+            slidesPerView: 2,
           },
           // when window width is >= 1024px
           1024: {

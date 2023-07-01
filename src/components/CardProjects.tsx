@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import "../styles/CardProjects.scss";
 
 const CardProjects = ({ data }: any) => {
+   
+
   return (
     <article className="CardProjects">
       <div className="CardImage">
@@ -19,7 +21,8 @@ const CardProjects = ({ data }: any) => {
 
       <div className="CardFooter">
         <p>{data.language}</p>
-        <button>🔅 View Live</button>
+        
+        <a href={data.url} target="_blank">🔅 View Live</a>
       </div>
     </article>
   );

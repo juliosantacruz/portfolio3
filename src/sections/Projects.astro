@@ -1,29 +1,28 @@
 ---
-import Sliders from "../components/Sliders";
-import quimikal from "../assets/imgProjects/p_quimikal.jpg";
-import bimcapacitacion from "../assets/imgProjects/p_bimcapacitacion.jpg";
-import discountsCitys from "../assets/imgProjects/p_discountscitys.jpg";
-import caretCorp from "../assets/imgProjects/p_sample_form.jpg";
+import Sliders from "../components/SlidersProjects";
+import SlidersDevTo from "../components/SlidersDevTo";
+
+
+const response = await fetch('https://dev.to/api/articles?username=julio_santacruz')
+const devToPost = await response.json()
+
+
 ---
 
 <section id="Projects">
     <div class="ProjectWrapper">
         <div class="ProjectSlider">
-            <h3>Latest projects / Demos...</h3>
+            <h3>Latest Projects / Demos...</h3>
             <Sliders type="profesional" client:visible />
         </div>
         <div class="ProjectSlider">
-            <h3>React projects...</h3>
+            <h3>React Projects...</h3>
             <Sliders type="react" client:visible />
         </div>
         <div class="ProjectSlider">
-            <h3>React projects...</h3>
-            <Sliders type="react" client:visible />
-        </div>
-        <!-- <div class="ProjectSlider">
             <h3>DevTo Posts...</h3>
-            <Sliders/>
-        </div> -->
+            <SlidersDevTo data={devToPost} client:visible />
+        </div> 
     </div>
 </section>
 
@@ -37,7 +36,7 @@ import caretCorp from "../assets/imgProjects/p_sample_form.jpg";
         justify-content: center;
     }
     .ProjectWrapper {
-        width: 70%;
+        width: var(--container-width);
         height: 100%;
         margin: 40px auto;
     }

@@ -11,7 +11,7 @@ import p_wheatherApp from "../assets/imgProjects/p_weather_app.jpg";
 import p_presentation from "../assets/imgProjects/p_presentation.jpg";
 import p_apiMovies from "../assets/imgProjects/p_apimovies.jpg";
 import p_searchGif from "../assets/imgProjects/p_SearchGif.jpg";
-
+import p_lewallet from "../assets/imgProjects/p_lewallet.png";
 
 import django from '../assets/Logos_tech/django-logo-240.png'
 import javascript from '../assets/Logos_tech/javascript-logo-240.png'
@@ -33,6 +33,20 @@ import figma from '../assets/Logos_tech/figma-logo-240.png'
 import astrojs from '../assets/Logos_tech/astro-light.svg'
 
 const projects = [
+  {
+    id: 'a',
+    type: "profesional",
+    title: "Le-Wallet",
+    url: "https://le-wallet.vercel.app/",
+    stack: [
+      { name:'React' ,icon:react },
+      { name:'Sass' ,icon:sass },
+      { name:'Next' ,icon:nextjs },
+      { name:'GitHub', icon: github },
+    ],
+    imgProject: p_lewallet,
+    language: "English / Ingles",
+  },
   {
     id: 1,
     type: "profesional",
@@ -65,7 +79,7 @@ const projects = [
     id: 3,
     type: "profesional",
     title: "Discounts Citys",
-    url: "https://discountscitydemo.herokuapp.com/",
+    url: "https://github.com/juliosantacruz/discounts-live",
     stack: [
       { name:'HTML' ,icon:html5 },
       { name:'CSS' ,icon:css3 },
@@ -92,7 +106,7 @@ const projects = [
     id: 5,
     type: "profesional",
     title: "Office Register",
-    url: "https://a-coworking.herokuapp.com/",
+    url: "https://github.com/juliosantacruz/coworking",
     stack: [
       { name:'HTML' ,icon:html5 },
       { name:'CSS' ,icon:css3 },
@@ -106,7 +120,7 @@ const projects = [
     id: 6,
     type: "profesional",
     title: "Agnes Donation Web",
-    url: "https://hogar-agneslester.herokuapp.com/",
+    url: "https://github.com/juliosantacruz/casahogar",
     stack: [
       { name:'HTML' ,icon:html5 },
       { name:'CSS' ,icon:css3 },

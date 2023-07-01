@@ -1,10 +1,15 @@
 ---
+import GoogleAnalitics from "../components/GoogleAnalitics.astro";
 const {title, description} = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const favicon = '../assets/favicon.ico'
 ---
 
 <head>
+	<!-- Google Analytics Ccode -->
+	<GoogleAnalitics/>
+
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />

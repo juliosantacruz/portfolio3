@@ -57,14 +57,15 @@ const skillsArr = [
 
 <style>
     section {
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         background-color: #f2f2f2;
+        background-attachment: fixed;
         display: flex;
         align-items: center;
     }
     .skillsSet {
-        width: 60%;
+        width: var(--container-width);
         background-color: rgba(255, 255, 255, 0.637);
 
         margin: 0 auto;
@@ -75,10 +76,10 @@ const skillsArr = [
     .skillsGroup {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         justify-items: center;
-        gap: 1rem;
+        gap: 2rem;
     }
     h2 {
         font-size: 50px;
@@ -92,13 +93,14 @@ const skillsArr = [
             padding: 0 40px 40px 40px;
         }
         .skillsGroup {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
         }
     }
 
     @media screen and (max-width: 768px) {
         .skillsGroup {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
 
             gap: 1rem;
